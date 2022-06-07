@@ -1,0 +1,93 @@
+@media screen and (max-width: 850px){
+    #right-side-nav-bar ul {
+        display: none;
+    }
+    #nav-bar img {
+        margin-left: 20px;
+    }
+    .bar {
+        margin-right: 20px;
+    }
+    #landing-page {
+        padding-left: 20px;
+    }
+    #landing-page h1 {
+        font-size: 2em;
+    }
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 50px;
+    }
+    .Wonders {
+        flex-direction: column;
+    }
+    #main-content-2 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+    Footer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35% 35% auto;
+        gap: 20px;
+    }
+    Footer div:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+
+}
+
+@media screen and (min-width: 761px) and (max-width: 1150px){
+    #main-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+        padding: 20px 100px;
+        height: auto;
+    }
+    #Coliseu {
+        grid-row: 2 / 3;
+    }
+    .side-content h2 {
+        padding-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1150px){
+    #main-content {
+        padding: 50px;
+        padding-bottom: 0px;
+    }
+    #main-content img {
+        width: 100%;
+    }
+    .Wonders {
+        flex-direction: column;
+    }
+    .side-content {
+        padding-left: 0;
+    }
+    #main-content-2 {
+        height: auto;
+        padding-top: 0px;
+        padding: 50px;
+    }
+    .side-content h2 {
+        padding-top: 10px;
+    }
+    .Wonders2 img {
+        padding-top: 10px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1280px){
+    #More-content {
+        padding-top: 50px;
+    }
+}

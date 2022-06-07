@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Geral */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Primeira página - Geral */
+
+#first-page {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/Background.jpg) no-repeat fixed center;
+    z-index: 1;
+    position: relative;
+}
+
+#first-page::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Barra de navegação */
+
+#nav-bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+}
+
+#nav-bar li,
+#nav-bar p {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+#logo-name {
+    text-decoration: overline;
+}
+
+#nav-bar img {
+    width: 30px;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+
+#nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#nav-bar a:hover {
+    background-color: #64AABB;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 0px 100px 6px 10px;
+}
+
+.bar:hover {
+    cursor: pointer;
+}
+
+#right-side-nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Conteúdo introdutório */
+
+#landing-page {
+    font-family: 'Libre Baskerville';
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    font-family: 'Montserrat';
+}
+
+#landing-page h1 {
+    font-size: 3em;
+}
+
+#titulo1 {
+    animation: fadein 1s;
+}
+
+#titulo2 {
+    margin-left: -700px;
+    animation: fadein 1s forwards;
+    animation-delay: 1s;
+}
+
+#titulo3 {
+    margin-left: -700px;
+    animation: fadein 1s forwards;
+    animation-delay: 2s;
+}
+
+
+#landing-page .cta {
+    text-decoration: none;
+    color: white;
+    background-color: #64AABB;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s
+}
+
+#landing-page .cta:hover {
+    color: white;
+    background-color: #4f8d9c;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Segunda página - Geral */
+
+#main-content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5% auto auto auto;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+/* Título */
+
+.title {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#line {
+    width: 350px;
+    height: 7px;
+    background-color: #64AABB;
+}
+
+/* Conteúdo */
+
+.Wonders {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.side-content h2,
+#Coliseu h2 {
+    padding-bottom: 10px;
+}
+
+#Coliseu {
+    grid-row: 2 /span 3;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#Coliseu img {
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.Wonders img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.Read-more {
+    text-decoration: none;
+    color: blue;
+    padding-top: 10px;
+}
+
+.Read-more:hover {
+    color: #64AABB;
+}
+
+#button a {
+    width: 120px;
+    height: 30px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #64AABB;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    transition: .3s;
+}
+
+#button a:hover {
+    background-color: #4f8d9c;
+}
+
+/* Terceira página - Geral */
+
+#main-content-2 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80% auto;
+    grid-template-columns: 30% 30% 30%;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+
+/* Conteúdo */
+
+.Wonders2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.Wonders2 h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Wonders2 img {
+    border-radius: 10px;
+}
+
+#More-content {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 3;
+    padding-top: 40px;
+}
+
+/* Footer */
+
+Footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #20231A;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+Footer a {
+    color: lightgray;
+    text-decoration: none;
+    display: block;
+}
+
+#Logo img {
+    width: 70px;
+    border-radius: 50px;
+}
+
+#Logo p {
+    text-decoration: overline;
+}
+
+/* Animação do h1 da primeira página */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-left: -300px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
