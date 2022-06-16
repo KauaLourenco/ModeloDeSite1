@@ -28,7 +28,7 @@ img:hover {
     grid-template-rows: 10% 90%;
     width: 100%;
     height: 100vh;
-    background: url('imagens/Background.jpg') no-repeat fixed center;
+    background: url("Imagens/Background.jpg") no-repeat fixed center;
     z-index: 1;
     position: relative;
 }
